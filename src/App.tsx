@@ -1,6 +1,6 @@
 import React from "react";
-import { AuthProvider } from "./context/AuthContext";
 import "./App.css";
+import { AuthProvider } from "./components/context/AuthContext";
 import UserAuth from "./components/context/userAuth/UserAuth";
 
 function App() {
