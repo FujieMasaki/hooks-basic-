@@ -1,14 +1,17 @@
-import React from 'react';
-import Counter from './components/Counter';
-import './App.css';
+import React from "react";
+import { AuthProvider } from "./context/AuthContext";
+import "./App.css";
+import UserAuth from "./components/context/userAuth/UserAuth";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <Counter />
-      </header>
-    </div>
+    <AuthProvider>
+      {/* Providerで囲まれた値を共有する */}
+      <div className="App">
+        <h2>#4 useContext</h2>
+        <UserAuth />
+      </div>
+    </AuthProvider>
   );
 }
 
