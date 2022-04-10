@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import Counter from "./components/Counter";
+import axios from "axios";
 import "./App.css";
+import ItemList from "./components/items/ItemList";
 
 function App() {
   const [isDisplay, setIsDisplay] = useState(true);
@@ -13,10 +14,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h2>useEffect</h2>
-        <button onClick={() => handleDisplay()}>
-          {isDisplay ? "コンポーネント非表示" : "コンポーネント表示"}
-        </button>
-        {isDisplay && <Counter />}
+        <ItemList/>
       </header>
     </div>
   );
