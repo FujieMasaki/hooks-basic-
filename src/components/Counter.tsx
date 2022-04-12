@@ -7,7 +7,7 @@ const Counter: React.VFC = () => {
     <>
       <div>{count}</div>
       <button onClick={() => setCount(count + 1)}>ボタン</button>
-    
+    <p>test</p>
       <button onClick={() => setCount(0)}>リセット</button>
     </>
   );
